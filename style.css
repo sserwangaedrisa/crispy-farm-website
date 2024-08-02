@@ -40,12 +40,6 @@ nav {
   border-radius: 2px;
 }
 
-.nav-item {
-  display: flex;
-  flex-direction: row;
-  justify-content: end;
-  margin-right: auto;
-}
 #crispy {
   font-size: 3rem;
   font-style: italic;

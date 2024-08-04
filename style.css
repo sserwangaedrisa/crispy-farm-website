@@ -35,16 +35,20 @@
 }
 
 nav {
-  height: 15vh;
+  height: auto;
   background: linear-gradient(90deg, #ffa07a, #ff4500);
-  border-radius: 2px;
+  border-radius: 7px;
 }
 
 #crispy {
   font-size: 3rem;
   font-style: italic;
   font-weight: bold;
-  margin-left: auto;
+  padding-right: 10%;
+}
+.nav-link {
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 
 .nav-scroller {

@@ -37,7 +37,11 @@
 nav {
   height: auto;
   background: linear-gradient(90deg, #ffa07a, #ff4500);
-  border-radius: 7px;
+  border-radius: 10px;
+}
+
+nav.shadow {
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
 }
 
 #crispy {
@@ -96,6 +100,7 @@ nav {
 
 /* Cover page */
 #cover {
+  margin-top: auto;
   position: relative;
   width: 100%;
   height: 100vh;

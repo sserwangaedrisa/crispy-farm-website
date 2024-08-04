@@ -106,6 +106,7 @@ nav.shadow {
   height: 100vh;
   overflow: hidden;
   background-size: cover;
+  border-radius: 10px;
   background-position: center;
   animation: slide 16s infinite;
 }
@@ -165,12 +166,6 @@ nav.shadow {
   justify-content: center;
   text-align: center;
   height: 100vh;
-  /* Optional styles for #cover-content */
-  /* position: relative;
-     z-index: 1;
-     color: white;
-     text-align: center;
-     padding: 20px; */
 }
 
 .cover-content h1 {
@@ -179,4 +174,30 @@ nav.shadow {
 
 .cover-content p {
   font-size: 1.25rem;
+}
+
+/* ABOUT SECTION */
+.about {
+  border-radius: 10px;
+  background: linear-gradient(rgb(206, 225, 148), rgb(228, 207, 48));
+}
+
+.about-div h2 {
+  font-size: 3rem;
+  font-weight: 3rem;
+  text-decoration: solid;
+}
+
+.about-div p {
+  font-size: 1.25rem;
+  font-weight: 1rem;
+  text-decoration: solid;
+  font-style: italic;
+}
+
+.product {
+  height: 50vh;
+}
+
+.card-text {
 }

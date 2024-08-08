@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Radio Button Test</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+      }
+      .radio-group {
+        margin-bottom: 10px;
+      }
+      .radio-group label {
+        display: block;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        margin-bottom: 5px;
+        cursor: pointer;
+      }
+      .radio-group input[type='radio'] {
+        display: none;
+      }
+      .radio-group input[type='radio']:checked + label {
+        background-color: #f0f0f0;
+        border-color: #007bff;
+      }
+      #result {
+        margin-top: 20px;
+        font-size: 1.2em;
+      }
+      @media (min-width: 600px) {
+        .radio-group {
+          display: flex;
+          justify-content: space-between;
+        }
+        .radio-group label {
+          flex: 1;
+          margin-right: 10px;
+        }
+        .radio-group label:last-child {
+          margin-right: 0;
+        }
+      }
+      @media (min-width: 900px) {
+        .radio-group label {
+          font-size: 1.2em;
+          padding: 15px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Responsive Radio Button Test</h1>
+    <div class="radio-group">
+      <input
+        type="radio"
+        id="option1"
+        name="option"
+        value="Option 1"
+        onclick="checkRadio(this)"
+      />
+      <label for="option1">Option 1</label>
+      <input
+        type="radio"
+        id="option2"
+        name="option"
+        value="Option 2"
+        onclick="checkRadio(this)"
+      />
+      <label for="option2">Option 2</label>
+      <input
+        type="radio"
+        id="option3"
+        name="option"
+        value="Option 3"
+        onclick="checkRadio(this)"
+      />
+      <label for="option3">Option 3</label>
+    </div>
+    <p id="result">Select an option above</p>
+    <script>
+      function checkRadio(radio) {
+        document.getElementById('result').textContent =
+          'You selected: ' + radio.value;
+      }
+    </script>
+  </body>
+</html>

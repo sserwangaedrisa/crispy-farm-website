@@ -176,8 +176,6 @@ nav.shadow {
   font-size: 1.25rem;
 }
 
-@media screen {
-}
 /* ABOUT SECTION */
 .about {
   border-radius: 10px;
@@ -258,7 +256,7 @@ nav.shadow {
   box-shadow: 0px 3px 4x rgb(212, 102, 102);
 }
 
-@media only screen and (max-width: 600px) {
+/* @media only screen and (max-width: 600px) {
   .product .image,
   .product .product-content {
     width: 100%;
@@ -272,5 +270,55 @@ nav.shadow {
 @media (max-width: 600px) {
   .product .row .col-6 {
     flex-shrink: 0;
+  }
+} */
+/* 
+@media (max-width: 600px) {
+  .product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (min-width: 600px) {
+  .product {
+    display: flex;
+    justify-content: space-between;
+  }
+  .radio-group label {
+    flex: 1;
+    margin-right: 10px;
+  }
+  .radio-group label:last-child {
+    margin-right: 0;
+  }
+}
+@media (min-width: 900px) {
+  .radio-group label {
+    font-size: 1.2em;
+    padding: 15px;
+  }
+} */
+/* Responsive adjustments for .products-section */
+@media (max-width: 768px) {
+  .products-section .row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .products-section .col-6 {
+    width: 100%;
+    max-height: none;
+    margin-bottom: 20px; /* Adds spacing between stacked elements */
+  }
+
+  .products-section .image img {
+    max-height: none;
+    height: auto; /* Ensures images scale properly */
+  }
+
+  .products-section .card-body {
+    text-align: left; /* Adjust text alignment for better readability */
   }
 }

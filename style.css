@@ -322,3 +322,8 @@ nav.shadow {
     text-align: left; /* Adjust text alignment for better readability */
   }
 }
+
+.product-item-section {
+  margin-top: 1rem;
+  box-shadow: 0px 4px 6px darkblue;
+}

@@ -33,7 +33,9 @@
   vertical-align: -0.125em;
   fill: currentColor;
 }
-
+.body {
+  background-color: rgb(222, 202, 202);
+}
 nav {
   height: auto;
   background: linear-gradient(90deg, #ffa07a, #ff4500);
@@ -179,6 +181,10 @@ nav.shadow {
 /* ABOUT SECTION */
 .about {
   border-radius: 10px;
+  background: linear-gradient(to right, #f0f0f0, #ddd);
+  border-bottom-left-radius: 50% 70px;
+  border-bottom-right-radius: 50% 70px;
+
   background: linear-gradient(rgb(206, 225, 148), rgb(228, 207, 48));
 }
 
@@ -193,6 +199,10 @@ nav.shadow {
   font-weight: 1rem;
   text-decoration: solid;
   font-style: italic;
+}
+
+.about button {
+  margin-bottom: 20px;
 }
 
 .products-section {
@@ -256,51 +266,6 @@ nav.shadow {
   box-shadow: 0px 3px 4x rgb(212, 102, 102);
 }
 
-/* @media only screen and (max-width: 600px) {
-  .product .image,
-  .product .product-content {
-    width: 100%;
-  }
-
-  .product .row {
-    flex-direction: column;
-    background-color: #5a23c8;
-  }
-}
-@media (max-width: 600px) {
-  .product .row .col-6 {
-    flex-shrink: 0;
-  }
-} */
-/* 
-@media (max-width: 600px) {
-  .product {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-}
-
-@media (min-width: 600px) {
-  .product {
-    display: flex;
-    justify-content: space-between;
-  }
-  .radio-group label {
-    flex: 1;
-    margin-right: 10px;
-  }
-  .radio-group label:last-child {
-    margin-right: 0;
-  }
-}
-@media (min-width: 900px) {
-  .radio-group label {
-    font-size: 1.2em;
-    padding: 15px;
-  }
-} */
-/* Responsive adjustments for .products-section */
 @media (max-width: 768px) {
   .products-section .row {
     flex-direction: column;
@@ -310,20 +275,49 @@ nav.shadow {
   .products-section .col-6 {
     width: 100%;
     max-height: none;
-    margin-bottom: 20px; /* Adds spacing between stacked elements */
+    margin-bottom: 20px;
   }
 
   .products-section .image img {
     max-height: none;
-    height: auto; /* Ensures images scale properly */
+    height: auto;
   }
 
   .products-section .card-body {
-    text-align: left; /* Adjust text alignment for better readability */
+    text-align: left;
   }
 }
 
 .product-item-section {
   margin-top: 1rem;
-  box-shadow: 0px 4px 6px darkblue;
+  box-shadow: 2px 4px 6px rgb(63, 63, 162);
+}
+.curvy {
+  background-color: white;
+  height: 150px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.wave {
+  height: 150px;
+  width: 50%;
+  border: 4px red solid;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+
+  border-bottom-left-radius: 50% 75px;
+  border-bottom-right-radius: 50% 76px;
+}
+.wave2 {
+  height: 150px;
+  width: 50%;
+  border-top-left-radius: 50% 75px;
+  border-top-right-radius: 50% 75px;
+  border: red solid;
+  border-bottom: none;
+  border-right: none;
+  border-left: none;
 }

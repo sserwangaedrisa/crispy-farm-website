@@ -169,13 +169,18 @@ nav.shadow {
   text-align: center;
   height: 100vh;
 }
+@media (max-width='760px') {
+  #cover-content {
+    height: 60vh;
+  }
+}
 
 .cover-content h1 {
-  font-size: 5rem;
+  font-size: 10rem;
 }
 
 .cover-content p {
-  font-size: 1.25rem;
+  font-size: 5rem;
 }
 
 /* ABOUT SECTION */
@@ -320,4 +325,18 @@ nav.shadow {
   border-bottom: none;
   border-right: none;
   border-left: none;
+}
+
+.instructions {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(rgb(255, 255, 255), rgb(187, 147, 147));
+}
+
+.instructions-cook,
+.instructions-storage {
+  margin-top: 4rem;
+  width: 80%;
 }

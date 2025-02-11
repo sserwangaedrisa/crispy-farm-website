@@ -5,5 +5,6 @@ Many things are done here that include;
 
 1. Makinddddg the crispy chips.
 2. Making the crispy fries.
+3. Storing the chips in the better way.
 3. How to store the chips well for a long period of time. 
 
